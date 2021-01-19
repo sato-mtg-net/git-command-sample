@@ -46,3 +46,5 @@ git commit -m "from home"
 └””内はなんでもOK
 git push origin main
 
+■リポジトリから差分を取得する
+git pull origin main
