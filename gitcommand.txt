@@ -1,0 +1,48 @@
+■Git for windowsのインストール
+https://gitforwindows.org/
+※インストールはすべてデフォルトでOK
+
+
+■Githubのアカウントを登録し、リポジトリを作成
+https://github.com/
+
+リポジトリ名（Repository name）は英字で
+Discriptionは特になしでOK
+Privateにし、チェックボックスはブランクのままCreateRepository
+
+
+■Githubのリポジトリ作成後のコマンド
+
+git init
+└初期化コマンド（今いるディレクトリの中に.gitディレクトリを作成）
+
+git add .
+└今いるディレクトリ以下すべてをaddする
+
+git commit -m "first commit"
+└コミット
+
+git branch -M main
+└ブランチをmainに
+
+git remote add origin ここにURLをコピペ
+└リモートリポジトリを設定
+
+git push -u origin main
+└リポジトリにプッシュ
+
+■家からGithubからクローンをする方法
+１．まずnotesbooksの中身をデスクトップなどに退避する
+２．スタートからGitbashを実行し、以下のコマンドを入力
+
+git clone https://github.com/oshikiri-h/python-practice.git notebooks/
+└URLの後ろはスペースのあと、noteと入力しTabを押して補完機能を使用する
+補完で出ない場合、今いるパスが誤っている可能性あり
+
+３．クローン完了後、退避させていたフォルダを上書き保存し以下のGitコマンドを実行
+
+git add .
+git commit -m "from home"
+└””内はなんでもOK
+git push origin main
+
